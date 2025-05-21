@@ -5,7 +5,7 @@ export default function Task16() {
     const [name, setname] = useState("");
 
     function on_button_press() {
-        setname(name === "" ? "Osama Al-Tawara" : "");
+        setname(name === "" ? "Osama Al-Tawara :)" : "");
     }
 
     return (  
