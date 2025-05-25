@@ -5,13 +5,13 @@
 //  * @format
 //  */
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import { Task20 } from './Tasks/Task20';
+import { SafeAreaView, StyleSheet,ScrollView,} from 'react-native';
+import  Task21  from './Tasks/Task21';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Task20 />
+      <Task21 />
     </SafeAreaView>
   );
 }

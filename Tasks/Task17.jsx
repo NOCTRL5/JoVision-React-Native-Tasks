@@ -10,9 +10,7 @@ export default function Task17() {
     }
     return (
         <View>
-            <Button
-                onPress={onpress}
-                title={title}>
+            <Button onPress={onpress}title={title}>
             </Button >
             <Text style={styles.show}>{name}</Text>
         </View >
