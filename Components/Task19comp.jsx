@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import { Text } from 'react-native';
+import { Component } from "react";
+import { Text } from "react-native";
 export class Task19ClassComponent extends Component {
     constructor() {
         super();
@@ -7,7 +7,7 @@ export class Task19ClassComponent extends Component {
             style: {
                 textStyle: {
                     textAlign: 'center',
-                    fontSize: 20,
+                    fontSize: 18,
                     color: 'red'
                 },
             }
