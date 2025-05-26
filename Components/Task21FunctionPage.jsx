@@ -12,7 +12,6 @@ export default function Task21Function() {
   
     return <Text style={styles.text}>This is MyFunctionPage</Text>;
   }
-  
   const styles = StyleSheet.create({
     text: {
       margin: 10,
