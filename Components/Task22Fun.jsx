@@ -1,4 +1,5 @@
 import { TextInput, View, StyleSheet } from "react-native";
+
 export function Task22Fun(props) {
     function text_change(current_value) {
         props.setText(current_value);
