@@ -8,7 +8,7 @@ export default function Task22() {
             <Text>
                 "yes"
             </Text>
-            <Task23_MyClassComponent setText={setText} />
+            <Task23Component setText={setText} />
         </View>
     );
 }
