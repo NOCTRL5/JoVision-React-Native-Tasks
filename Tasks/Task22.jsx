@@ -4,7 +4,6 @@ import { Task22Fun } from "../Components/Task22Fun";
 
 export default function Task22() {
     const [text, setText] = useState("...")
-    
     return (
         <View style={styles.wrapper}>
             <Text style={styles.textStyle}>
