@@ -6,12 +6,12 @@
 //  */
 import React from 'react';
 import { SafeAreaView, StyleSheet,ScrollView,} from 'react-native';
-import  Task21  from './Tasks/Task21';
+import  Task22   from './Tasks/Task22';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Task21 />
+      <Task22/>
     </SafeAreaView>
   );
 }
