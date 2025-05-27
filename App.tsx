@@ -6,7 +6,7 @@
 //  */
 import React from 'react';
 import { SafeAreaView, StyleSheet,ScrollView,} from 'react-native';
-import  Task23   from './Tasks/Task23';
+import  Task23  from './Tasks/Task23';
 
 export default function App() {
   return (
