@@ -10,6 +10,11 @@ export class Task23Component extends Component {
             }
         }
     }
-
-    
+    render() {
+        return (
+            <TextInput
+                onChangeText={this.state.text_change}>
+            </TextInput>
+        );
+    }
 }
