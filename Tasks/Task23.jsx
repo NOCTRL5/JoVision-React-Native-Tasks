@@ -26,6 +26,7 @@ export default class Task23 extends Component {
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         padding: 20,
     },
     text: {

@@ -5,7 +5,7 @@
 //  * @format
 //  */
 import React from 'react';
-import { SafeAreaView, StyleSheet,ScrollView,} from 'react-native';
+import { SafeAreaView, StyleSheet} from 'react-native';
 import  Task23  from './Tasks/Task23';
 
 export default function App() {
