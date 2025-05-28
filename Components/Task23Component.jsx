@@ -1,5 +1,4 @@
 import { TextInput, View, StyleSheet } from "react-native";
-import { TextInput } from "react-native";
 
 export class Task23Component extends Component {
     constructor(props) {
@@ -17,4 +16,16 @@ export class Task23Component extends Component {
             </TextInput>
         );
     }
+    
 }
+const styles = StyleSheet.create({
+    container: {
+        padding: 20,
+    },
+    text: {
+        fontSize: 20,
+        color: 'blue',
+        marginBottom: 10,
+        textAlign: 'center',
+    }
+});
