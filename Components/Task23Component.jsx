@@ -4,10 +4,12 @@ export class Task23Component extends Component {
     constructor(props) {
         super(props);
         this.state = {
-           text_change: function text_change(text) {
-                props.setText(text);
-            }
-        }
+            text: "Initial Text"
+        };
+    }
+
+    updateText = (newText) => {
+        this.setState({ text: newText });
     }
     render() {
         return (
