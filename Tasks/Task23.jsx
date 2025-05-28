@@ -25,6 +25,9 @@ export default class Task23 extends Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        padding: 20,
+    },
     textStyle: {
         fontSize: 18,
         color: "blue",
