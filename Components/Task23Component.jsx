@@ -11,9 +11,10 @@ export class Task23Component extends Component {
     }
     render() {
         return (
-            <TextInput
-                onChangeText={this.state.text_change}>
-            </TextInput>
+            <View style={styles.container}>
+                <Text style={styles.text}>{this.state.text}</Text>
+                <MyTextInputComponent onTextChange={this.updateText} />
+            </View>
         );
     }
     
