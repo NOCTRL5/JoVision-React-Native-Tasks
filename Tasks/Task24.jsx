@@ -7,7 +7,7 @@ export default function Task24() {
     const textRef = useRef();
 
     const on_text_input = (new_text) => {
-        textRef.current.updateText(new_text);
+        textRef.current?.updateText(new_text);
     }
     return (
         <View>
