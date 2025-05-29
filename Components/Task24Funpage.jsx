@@ -2,7 +2,7 @@ import { useImperativeHandle, useState, forwardRef } from "react";
 import { Text } from "react-native";
 import React from "react";
 
-export default function Task24_MyFunctionPage(props) {
+const Task24_MyFunctionPage = forwardRef((props, ref) => {
     const [text, setText] = useState("Task24")
     
     useImperativeHandle(ref, () => ({
@@ -24,4 +24,5 @@ export default function Task24_MyFunctionPage(props) {
             {text}
         </Text>
     );
-}
+});
+export default Task24FunPage;
