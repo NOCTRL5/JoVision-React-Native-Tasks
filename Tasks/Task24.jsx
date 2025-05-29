@@ -7,13 +7,14 @@ export default function Task24() {
     const textRef = useRef();
 
     const on_text_input = (new_text) => {
-        textRef.current?.updateText(new_text);
+        textRef.current?.changeText(new_text);
     }
     return (
         <View>
-            <Task24FunPage text={textRef} />
+            <Task24FunPage ref={textRef} />
             <TextInput onChangeText={on_text_input}
-            placeholder="Type here"/>
+                placeholder="Type here"
+            />
         </View>
     )
 }
