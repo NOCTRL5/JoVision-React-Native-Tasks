@@ -6,21 +6,21 @@
 //  */
 import React from 'react';
 import { SafeAreaView, StyleSheet} from 'react-native';
-import  Task23  from './Tasks/Task23';
+import  Task24   from './Tasks/Task24';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Task23/>
+      <Task24/>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,                // fills the whole screen
-    justifyContent: 'center', // centers vertically
-    alignItems: 'center',      // centers horizontally
+    flex: 1,               
+    justifyContent: 'center', 
+    alignItems: 'center',      
   },
 });
 
