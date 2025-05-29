@@ -4,13 +4,7 @@ import React from "react";
 
 export default function Task24_MyFunctionPage(props) {
     const [text, setText] = useState("Task24")
-    const styles = {
-        textStyle: {
-            fontSize: 20,
-            color: 'purple',
-            textAlign: 'center'
-        }
-    }
+    
     function handler() {
         return ({
             changeText(string) {
@@ -19,6 +13,15 @@ export default function Task24_MyFunctionPage(props) {
         });
     }
     useImperativeHandle(props.text, handler);
+
+    const styles = {
+        textStyle: {
+            fontSize: 20,
+            color: 'purple',
+            textAlign: 'center'
+        }
+    }
+    
     return (
         <Text style={styles.textStyle}>
             {text}
