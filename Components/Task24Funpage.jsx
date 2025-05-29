@@ -2,7 +2,7 @@ import { useImperativeHandle, useState, forwardRef } from "react";
 import { Text } from "react-native";
 import React from "react";
 
-const Task24_MyFunctionPage = forwardRef((props, ref) => {
+const Task24FunPage = forwardRef((props, ref) => {
     const [text, setText] = useState("Task24")
     
     useImperativeHandle(ref, () => ({
