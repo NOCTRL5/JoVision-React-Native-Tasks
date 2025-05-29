@@ -1,6 +1,6 @@
 import { useRef} from "react";
 import { View, TextInput } from "react-native";
-import { Task24FunPage } from "../Components/Task24FunPage";
+import  Task24FunPage  from "../Components/Task24FunPage";
 import React from "react";
 
 export default function Task24() {
