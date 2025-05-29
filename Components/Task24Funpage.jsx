@@ -23,5 +23,5 @@ export default function Task24_MyFunctionPage(props) {
         <Text style={styles.textStyle}>
             {text}
         </Text>
-    )
+    );
 }
