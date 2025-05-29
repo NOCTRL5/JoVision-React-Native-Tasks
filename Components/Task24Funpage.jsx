@@ -1,4 +1,4 @@
-import { useImperativeHandle, useState } from "react";
+import { useImperativeHandle, useState, forwardRef } from "react";
 import { Text } from "react-native";
 import React from "react";
 
@@ -7,7 +7,7 @@ export default function Task24_MyFunctionPage(props) {
     const styles = {
         textStyle: {
             fontSize: 20,
-            color: 'pruple',
+            color: 'purple',
             textAlign: 'center'
         }
     }
