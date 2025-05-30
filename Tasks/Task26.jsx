@@ -3,7 +3,7 @@ import { ActivityIndicator, Button, StyleSheet, Text, View,} from "react-native"
 
 export function Task26() {
     const url = "https://api.ipify.org/?format=json";
-    const [text, setText] = useState("Task26");
+    const [text, setText] = useState("Task 26");
     const [loader, setLoader] = useState(false);
 
     const non_blocking_request = () => {
