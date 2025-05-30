@@ -9,7 +9,6 @@ import {
 
 export function Task26() {
     const url = "https://api.ipify.org/?format=json";
-
     const [text, setText] = useState("Task26");
     const [loader, setLoader] = useState(false);
 
@@ -38,7 +37,7 @@ export function Task26() {
         }
       };
 
-      const styles = StyleSheet.create({
+    const styles = StyleSheet.create({
         container: {
           flex: 1,
           justifyContent: "center",
