@@ -24,7 +24,6 @@ export function Task26() {
                 console.error(error);
             });
     };
-
     const blocking_request = async () => {
         try {
           setLoader(true);
@@ -38,6 +37,23 @@ export function Task26() {
           setLoader(false);
         }
       };
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        textStyle: {
+          fontSize: 20,
+          textAlign: "center",
+          marginTop: 20,
+          color: "purple",
+        },
+        button: {
+          marginVertical: 10,
+        },
+      });
     
       return (
         <View style={styles.container}>
@@ -55,5 +71,5 @@ export function Task26() {
             <ActivityIndicator size="large" color="purple" />
           )}
         </View>
-      );
+    );
 }
