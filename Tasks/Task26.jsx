@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  ActivityIndicator,
-  Button,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { ActivityIndicator, Button, StyleSheet, Text, View,} from "react-native";
 
 export function Task26() {
     const url = "https://api.ipify.org/?format=json";
@@ -23,7 +17,7 @@ export function Task26() {
                 console.error(error);
             });
     };
-    
+
     const blocking_request = async () => {
         try {
           setLoader(true);
