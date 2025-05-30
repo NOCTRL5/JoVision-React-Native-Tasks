@@ -39,8 +39,6 @@ export function Task26() {
         }
       };
     
-      
-    
       return (
         <View style={styles.container}>
           {!loader ? (
