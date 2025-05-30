@@ -25,4 +25,19 @@ export function Task26() {
             });
     };
 
+    const blocking_request = async () => {
+        try {
+          setLoader(true);
+          const res = await fetch(url);
+          const data = await res.json();
+          setText(`Your IP: ${data.ip}`);
+        } catch (error) {
+          setText("Failed to fetch IP");
+          console.error(error);
+        } finally {
+          setLoader(false);
+        }
+      };
+    
+      
 }
