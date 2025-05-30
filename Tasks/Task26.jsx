@@ -40,4 +40,22 @@ export function Task26() {
       };
     
       
+    
+      return (
+        <View style={styles.container}>
+          {!loader ? (
+            <View>
+              <View style={styles.button}>
+                <Button title="Non-Blocking Request" onPress={non_blocking_request} />
+              </View>
+              <View style={styles.button}>
+                <Button title="Blocking Request" onPress={blocking_request} />
+              </View>
+              <Text style={styles.textStyle}>{text}</Text>
+            </View>
+          ) : (
+            <ActivityIndicator size="large" color="purple" />
+          )}
+        </View>
+      );
 }
