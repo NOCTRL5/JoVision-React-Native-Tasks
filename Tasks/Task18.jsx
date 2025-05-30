@@ -11,7 +11,7 @@ export default function Task18() {
             settimeout(false);
             setname("Osama Al-Tawara");
         }, 5000);
-        return () => clearTimeout(timer); // Clean up the timer on unmount
+        return () => clearTimeout(timer); 
     }, []);
   return (
       <SafeAreaProvider>
