@@ -23,6 +23,7 @@ export function Task26() {
                 console.error(error);
             });
     };
+    
     const blocking_request = async () => {
         try {
           setLoader(true);
