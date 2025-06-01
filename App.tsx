@@ -10,9 +10,9 @@ import Task28  from './Tasks/Task28';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    //<SafeAreaView style={styles.container}>
       <Task28/>
-    </SafeAreaView>
+   //</SafeAreaView>
   );
 }
 

@@ -23,8 +23,7 @@ export default function Task28() {
                 margin: 15,
                 padding: 20,
             }}
-            data={arr}
-            renderItem={item_renderer}
+            data={images_list}
             horizontal={true}
         />
     )
