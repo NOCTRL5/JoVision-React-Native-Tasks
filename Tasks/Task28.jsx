@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, Image, ScrollView, Text, View, FlatList, SafeAreaView } from "react-native";
+import { Alert, Image, ScrollView, FlatList, SafeAreaView } from "react-native";
 
 export default function Task28() {
     const images_list = [
