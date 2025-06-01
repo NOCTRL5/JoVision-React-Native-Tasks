@@ -6,16 +6,24 @@ export default function Task28() {
         require('../Resources/0.jpg'),
         require('../Resources/1.jpg'),
         require('../Resources/2.jpg'),
-        require('../Resources/3.jpg'),
+        require('../Resources/3.png'),
         require('../Resources/4.jpg'),
         require('../Resources/5.jpg'),
         require('../Resources/6.jpg'),
         require('../Resources/7.jpg'),
         require('../Resources/8.jpg'),
         require('../Resources/9.jpg'),
-        require('../Resources/10.jpg'),
-        require('../Resources/11.gif')
+        require('../Resources/10.jpg')
+        //require('../Resources/11.gif')
     ]
+
+    const renderItem = ({ item }) => (
+        <Image
+            source={item}
+            style={{ width: 200, height: 200, marginRight: 10 }}
+            resizeMode="contain"
+        />
+    );
 
     return (
         <FlatList
@@ -24,6 +32,8 @@ export default function Task28() {
                 padding: 20,
             }}
             data={images_list}
+            renderItem={renderItem}
+            keyExtractor={(_, index) => index.toString()}
             horizontal={true}
         />
     )
