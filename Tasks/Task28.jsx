@@ -16,4 +16,16 @@ export default function Task28() {
         require('../Resources/10.jpg'),
         require('../Resources/11.gif')
     ]
+
+    return (
+        <FlatList
+            style={{
+                margin: 15,
+                padding: 20,
+            }}
+            data={arr}
+            renderItem={item_renderer}
+            horizontal={true}
+        />
+    )
 }
