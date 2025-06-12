@@ -15,17 +15,17 @@ export default function Task28() {
         require('../Resources/10.jpg'),
         require('../Resources/11.gif')
     ]
-
+    
     const renderItem = ({ item }) => (
         <Image
             source={item}
             style={{ width: 550, height: 800, marginRight: 10 }}
-            resizeMode="contain"
+            //resizeMode="contain"
         />
     );
 
     return (
-        <SafeAreaView>
+        //<SafeAreaView>
         <FlatList
             style={{
                 margin: 15,
@@ -33,9 +33,9 @@ export default function Task28() {
             }}
             data={images_list}
             renderItem={renderItem}
-            keyExtractor={(_, index) => index.toString()}
+            //keyExtractor={(_, index) => index.toString()}
             horizontal={true}
             />
-        </SafeAreaView>
+        //</SafeAreaView>
     )
 }
