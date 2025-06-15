@@ -16,18 +16,18 @@ export default function Task28Comp(props) {
 
 const styles = StyleSheet.create({
   img_size: {
-    width: 180,
-    height: 220,
+    width: 280,
+    height: 420,
     marginHorizontal: 8,
     borderRadius: 16,
-    borderColor: "#a200e2",
+    borderColor: "Black",
     borderWidth: 3,
     alignItems: "center",
     padding: 8,
   },
   img_style: {
-    width: 160,
-    height: 160,
+    width: 260,
+    height: 400,
     resizeMode: "contain",
     borderRadius: 12,
   },
