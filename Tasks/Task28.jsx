@@ -1,4 +1,5 @@
-import { Alert, Image, FlatList, SafeAreaView } from "react-native";
+import {FlatList, View, StyleSheet} from "react-native";
+import Task28Comp  from '../Components/Task28Comp';
 
 export default function Task28() {
     const images_list = [
@@ -16,26 +17,32 @@ export default function Task28() {
         require('../Resources/11.gif')
     ]
     
-    const renderItem = ({ item }) => (
-        <Image
-            source={item}
-            style={{ width: 550, height: 800, marginRight: 10 }}
-            //resizeMode="contain"
+    function renderer({ item, index }) {
+        return <Task28Comp
+            path={item}
+            idx={index}
         />
-    );
+    }
 
     return (
-        //<SafeAreaView>
-        <FlatList
-            style={{
-                margin: 15,
-                padding: 20,
-            }}
-            data={images_list}
-            renderItem={renderItem}
-            //keyExtractor={(_, index) => index.toString()}
-            horizontal={true}
+        <View style={styles.container}>
+            <FlatList
+                data={images_list}
+                renderItem={renderer}
+                keyExtractor={(_, index) => index.toString()}
+                horizontal={true}
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.listContent}
             />
-        //</SafeAreaView>
-    )
+        </View>
+    );
 }
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      paddingVertical: 20,
+    },
+    listContent: {
+      paddingHorizontal: 10,
+    },
+  });
