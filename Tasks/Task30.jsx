@@ -79,9 +79,35 @@ export default function Task30() {
   });  
 
   function item_renderer({ item, index }) {
-    return <Task28Comp path={item} idx={index} />;
+    return (
+      <Task28Comp
+        path={item}
+        idx={index}
+        onRemove={handleRemove}
+        onDuplicate={handleDuplicate}
+      />
+    );
   }
-
+  function handleRemove(index) {
+    Alert.alert('Confirm Deletion', `Delete image at index ${index}?`, [
+      { text: 'Cancel', style: 'cancel' },
+      {
+        text: 'Delete',
+        style: 'destructive',
+        onPress: () => {
+          setArr((prev) => prev.filter((_, i) => i !== index));
+        },
+      },
+    ]);
+  }
+  
+  function handleDuplicate(index) {
+    setArr((prev) => {
+      const newArr = [...prev];
+      newArr.splice(index + 1, 0, prev[index]); // insert a copy after the original
+      return newArr;
+    });
+  }
   function on_change_text(t) {
     setText(t);
     setNop('');
