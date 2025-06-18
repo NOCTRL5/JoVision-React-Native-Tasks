@@ -20,7 +20,7 @@ export default function Task28Comp(props) {
         <MaterialIcons name="close" size={20} color="white" />
       </Pressable>
 
-      require('../Resources/1.jpeg'),
+     
       <Pressable onPress={on_press} style={styles.img_size}>
         <Image style={styles.img_style} source={path} />
         <Text style={styles.text_style}>Image #{idx}</Text>
