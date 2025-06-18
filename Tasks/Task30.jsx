@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { Button, FlatList, Modal, View, StyleSheet, Alert } from "react-native";
 import Task28Comp from '../Components/Task28Comp';
 import Task29PopUp from '../Components/Task29PopUp';
-{//huadshfajskdgnas}
 
 export default function Task30() {
   const [text, setText] = useState('');
