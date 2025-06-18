@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, FlatList, Modal, View, StyleSheet } from "react-native";
+import { Button, FlatList, Modal, View, StyleSheet, Alert } from "react-native";
 import Task28Comp from '../Components/Task28Comp';
 import Task29PopUp from '../Components/Task29PopUp';
 
@@ -89,6 +89,7 @@ export default function Task30() {
     );
   }
   function handleRemove(index) {
+    console.log("Remove clicked for index:", index);
     Alert.alert('Confirm Deletion', `Delete image at index ${index}?`, [
       { text: 'Cancel', style: 'cancel' },
       {
@@ -141,6 +142,7 @@ export default function Task30() {
   }
 
   function open_popup_prompt() {
+    console.log("Search button pressed, opening modal");
     setText('');
     setNop('');
     setVisible(true);

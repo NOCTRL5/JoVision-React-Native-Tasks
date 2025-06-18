@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
-import { Image, StyleSheet, Text, Alert, Pressable } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Image, StyleSheet, Text, Alert, Pressable, View } from "react-native";
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'; 
 
 export default function Task28Comp(props) {
   const { path, idx, onRemove, onDuplicate } = props;
