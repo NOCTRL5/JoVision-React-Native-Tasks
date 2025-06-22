@@ -8,11 +8,6 @@ export default function Task32() {
   const vid = require("../Resources/egg.mp4");
   const videoRef = useRef(null);
 
-  // autoplay when component mounts:
-  // useEffect(() => {
-  //   setIsPlaying(true);
-  // }, []);
-
   const onPressPoster = () => {
     setIsPlaying(true);
   };
