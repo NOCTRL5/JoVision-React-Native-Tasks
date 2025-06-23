@@ -1,5 +1,5 @@
 import { ScrollView, Text } from "react-native";
-export function Task36() {
+export default function Task36() {
     function generateRandomWord(length) {
         let result = '';
         const characters = 'abcdefghijklmnopqrstuvwxyz';
