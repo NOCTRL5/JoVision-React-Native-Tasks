@@ -1,20 +1,18 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-function reducer(state, action) {
-    state.text = action.payload;
-}
-
 const textSlice = createSlice({
     name: 'text',
     initialState: { text: "Task39", },
     reducers: {
-        setText: reducer,
-    },
-})
+        setText: (state, action) => {
+            state.text = action.payload;
+        }
+        }
+    });
 
 export const { setText } = textSlice.actions;
 
-export const store = configureStore({
+export const Store = configureStore({
     reducer: {
         text: textSlice.reducer
     }
