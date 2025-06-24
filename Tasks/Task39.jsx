@@ -1,8 +1,8 @@
 import { Button, View } from "react-native";
 import { Provider } from "react-redux";
 import { useState } from "react";
-import { Task39InputComponent } from "../Components/Task39InputComponent";
-import { store } from "../Store/store";
+import { Task39InputComp } from "../Components/Task39InputComp";
+import { store } from "../Store/Store";
 
 export default function Task39() {
     const [show, setShow] = useState(false);
@@ -20,7 +20,7 @@ export default function Task39() {
                     title={show ? "Hide" : "Show"}
                     onPress={on_press}
                 />
-                {show && <Task39InputComponent />}
+                {show && <Task39InputComp />}
             </View>
         </Provider>
     );

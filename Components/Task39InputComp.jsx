@@ -4,7 +4,7 @@ import { setText } from "../Store/store";
 import { useDispatch, useSelector } from "react-redux";
 
 
-export function Task39InputComponent() {
+export function Task39InputComp() {
     const text = useSelector(handleSelector);
     const dispatcher = useDispatch();
     function handleSelector(state) {
@@ -23,7 +23,7 @@ export function Task39InputComponent() {
         on_mount();
         return on_unmount;
     }
-    useEffect(handleEffect, [Task39InputComponent]);
+    useEffect(handleEffect, [Task39InputComp]);
     return <TextInput
         value={text}
         placeholder="Write here..."
