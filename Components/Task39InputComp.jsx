@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { TextInput } from "react-native";
-import { setText } from "../Store/store";
+import { setText } from "../Store/Store";
 import { useDispatch, useSelector } from "react-redux";
 
 
@@ -23,7 +23,7 @@ export function Task39InputComp() {
         on_mount();
         return on_unmount;
     }
-    useEffect(handleEffect, [Task39InputComp]);
+    useEffect(handleEffect, []);
     return <TextInput
         value={text}
         placeholder="Write here..."
@@ -36,7 +36,7 @@ export function Task39InputComp() {
             borderRadius: 16,
             marginHorizontal: 4,
             marginVertical: 16,
-            paddingHorizontal: 8,
+            paddingHorizontal: 6,
             paddingVertical: 4,
         }}
     />;
