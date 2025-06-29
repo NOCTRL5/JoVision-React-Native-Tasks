@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-end',
         alignItems: 'center',
-        paddingBottom: 20,
+        paddingBottom: 26,
     },
 });
-export function Task42() {
+export default function Task42() {
     return (
         <NavigationContainer>
             <Tab.Navigator
